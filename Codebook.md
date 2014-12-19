@@ -3,7 +3,7 @@
 run_analysis.r
 v.1.0
 
-For the a description of how script is working, see README.
+For the description of how script is working, see README.
 
 In order to run the file run_analysis.r and get the final tidy set you have to setwd() to the directory you have files: x_train, x_test, subject_train, subject_test, y_train, y_test, features, activity_labels
 
