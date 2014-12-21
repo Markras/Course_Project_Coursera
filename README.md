@@ -15,8 +15,6 @@ My script has 3 parts.
 1.2 The second step is to properly name activities from y_train and y_test. So instead of having 1,2,3... we get Laying, Sitting, Standing... we achieve this by iterating through the y files and renaming their variables using the labels.txt. We have to use the function 'as.character' to get correct results.
 Since I find it clearer, I do it on two initial files (y's). But we could actually rename this later with a single loop. 
 
-1.2 The second step is to properly name activities from y_train and y_test. So instead of having 1,2,3... we get Laying, Sitting, Standing... we achieve this by iterating through the y files and renaming their variables using the labels.txt. We have to use the function 'as.character' to get correct results. Since I find it clearer, I do it on two initial files (y's). But we could actually rename this later with a single loop. 
-
 1.3 The next step consists in properly naming columns using the names included in features.txt and adding two suppementary names for the Subject.ID and for the Activities. After properly naming datasets we merge them with Subject and Activity (y) columns. For merging datasets I used the simplest cbind and rbind. 
 
 We get the "mergedData" variable with the full tidy data set
