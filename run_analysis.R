@@ -4,7 +4,7 @@
 features <- read.table(".\\UCI HAR Dataset\\features.txt", header=F)
 
 X_train <- read.table(".\\UCI HAR Dataset\\train\\X_train.txt", header=F)
-y_train <- read.table(".\UCI HAR Dataset\\train\\Y_train.txt", header=F)
+y_train <- read.table(".\\UCI HAR Dataset\\train\\Y_train.txt", header=F)
 subject1 <- read.table(".\\UCI HAR Dataset\\train\\subject_train.txt", header=F)
 
 x_test <- read.table(".\\UCI HAR Dataset\\test\\X_test.txt", header=F)
@@ -30,7 +30,7 @@ while(iter <= nrow(y_train)){
 #and for the Activities. After properly naming datasets we merge them with Subject and Activity (y) columns.
 colnames(X_train) = features[,2] #renaming...
 colnames(y_train) = c("Activity")
-mergedData1 <- cbind(y1,X_train) #binding measurements and activities
+mergedData1 <- cbind(y_train,X_train) #binding measurements and activities
 colnames(subject1) <- "Subject.ID"
 mergedData1 <- cbind(subject1, mergedData1) #binding measurements and subject ids
 
